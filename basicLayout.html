@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Basic Layout</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background-color: black;
+      color: white;
+      padding: 30px;
+      text-align: center;
+    }
+
+    nav {
+      float: left;
+      width: 30%;
+      height: 500px;
+      background-color: aqua;
+      padding: 20px;
+    }
+
+    nav ul {
+      list-style-type: none;
+      padding: 0;
+    }
+
+    article {
+      float: left;
+      padding: 20px;
+      width: 65%;
+      background-color: brown;
+      height: 500px;
+    }
+
+    footer {
+      background-color: cadetblue;
+      padding: 20px;
+      text-align: center;
+      color: #000;
+    }
+
+    section::after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+  </style>
+
+</head>
+
+<body style="background-color: aliceblue; color: black; font-size: 2rem;">
+  <!-- <h1 style="text-align: center;">Basic Layout</h1>
+  <br> -->
+
+  <!-- Header , Section, Footer , Navbar -->
+  <header>
+    Layout
+  </header>
+
+  <section>
+    <nav>
+      <ul>
+        <li>
+          <a href="#">Navbar1</a>
+        </li>
+        <li>
+          <a href="#">Navbar2</a>
+        </li>
+        <li>
+          <a href="#">Navbar3</a>
+        </li>
+        <li>
+          <a href="#">Navbar4</a>
+        </li>
+      </ul>
+    </nav>
+
+
+    <article>
+      <h1>
+        Main Article
+      </h1>
+
+      <!-- <section>
+        <h1></h1>
+        <h1></h1>
+        <h1></h1>
+        <h1></h1>
+        <h1></h1>
+        <h1></h1>
+        <p></p>
+        <p></p>
+        <p></p>
+      </section> -->
+
+      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nostrum, quis cum error, voluptates quas facere
+        blanditiis quae, obcaecati minus ipsa enim molestiae pariatur magnam rerum eius consequuntur amet saepe
+        laudantium.</p>
+      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nostrum, quis cum error, voluptates quas facere
+        blanditiis quae, obcaecati minus ipsa enim molestiae pariatur magnam rerum eius consequuntur amet saepe
+        laudantium.</p>
+      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nostrum, quis cum error, voluptates quas facere
+        blanditiis quae, obcaecati minus ipsa enim molestiae pariatur magnam rerum eius consequuntur amet saepe
+        laudantium.</p>
+    </article>
+
+  </section>
+
+  <footer>
+    <p>CopyRight data</p>
+  </footer>
+
+
+</body>
+
+</html>
