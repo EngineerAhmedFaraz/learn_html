@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HTML FORM</title>
+  <style>
+    .heading {
+      font-size: 3rem;
+      font-family: 'Courier New', Courier, monospace;
+      font-weight: 900;
+      text-align: center;
+      border-bottom: 2px solid black;
+      padding: .5rem;
+    }
+
+    form {
+      width: 500px;
+      height: 500px;
+      border: 1px solid red;
+      border-radius: 5px;
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+      padding: 30px;
+      margin-left: 40%;
+    }
+
+    div {
+      border: 1px solid black;
+      border-radius: 5px;
+      width: 100%;
+      height: 80px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: pink;
+      /* padding: 5px; */
+    }
+
+    label {
+      font-size: 1.5rem;
+      margin-right: 13px;
+    }
+
+    input {
+      border-bottom: 1px solid black;
+      width: 320px;
+      height: 40px;
+      padding: 5px;
+      font-size: 20px;
+      border-radius: 5px;
+    }
+
+    button {
+      width: 150px;
+      height: 50px;
+      border: 1px solid black;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 20px;
+    }
+  </style>
+</head>
+
+<body>
+  <h1 class="heading">HTML FORM</h1>
+  <!-- We have Form Tag for Login Form & Registration form & Contact Form -->
+  <!-- action="/action_page.php" -->
+  <form action="#">
+    <div>
+      <label for="fname">First Name:</label>
+      <input type="text" name="fname" id="fname" placeholder="First name" autocomplete="off">
+    </div>
+
+    <!-- ShortKey for up/down value :  alt+arrowFigure  -->
+    <div>
+      <label for="lname">Last Name:</label>
+      <input type="text" name="lname" id="lname" placeholder="Last name" autocomplete="off">
+    </div>
+
+    <!-- id="password" to use for Javascript to access of HTML TAG and perform action -->
+
+    <div>
+      <label for="password">Password:</label>
+      <input type="password" name="password" id="password" placeholder="Password" autocomplete="off">
+    </div>
+
+    <div>
+      <label for="email">Email:</label>
+      <input type="email" name="email" id="email" placeholder="Email" autocomplete="off">
+    </div>
+
+    <div>
+      <label for="html">HTML</label>
+      <input type="radio" name="fav_language" id="html" value="HTML">
+
+      <br>
+      <label for="css">CSS</label>
+      <input type="radio" name="fav_language" id="html" value="CSS">
+    </div>
+
+
+    <button value="submit"> Submit</button>
+
+  </form>
+
+</body>
+
+</html>
