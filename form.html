@@ -15,9 +15,14 @@
       padding: .5rem;
     }
 
+    /* font-size : convert into react then use fontSize */
+
+    /* Import to understand of basic core CSS then you go to and framework of css. */
+    /* CSS  = > BOOTSTRAP + Tailwind CSS + Material UI + Ant Design so on  */
+
     form {
       width: 500px;
-      height: 500px;
+      height: auto;
       border: 1px solid red;
       border-radius: 5px;
       display: flex;
@@ -27,7 +32,8 @@
       margin-left: 40%;
     }
 
-    div {
+
+    div .form {
       border: 1px solid black;
       border-radius: 5px;
       width: 100%;
@@ -39,12 +45,16 @@
       /* padding: 5px; */
     }
 
-    label {
+    .label1 {
       font-size: 1.5rem;
       margin-right: 13px;
     }
 
-    input {
+    label {
+      font-size: 1.5rem;
+    }
+
+    input .input1 {
       border-bottom: 1px solid black;
       width: 320px;
       height: 40px;
@@ -52,6 +62,7 @@
       font-size: 20px;
       border-radius: 5px;
     }
+
 
     button {
       width: 150px;
@@ -70,41 +81,127 @@
   <!-- action="/action_page.php" -->
   <form action="#">
     <div>
-      <label for="fname">First Name:</label>
-      <input type="text" name="fname" id="fname" placeholder="First name" autocomplete="off">
+      <label class="label1" for="fname">First Name:</label>
+      <input class="input1" type="text" name="fname" id="fname" placeholder="First name" autocomplete="off">
     </div>
 
     <!-- ShortKey for up/down value :  alt+arrowFigure  -->
-    <div>
-      <label for="lname">Last Name:</label>
-      <input type="text" name="lname" id="lname" placeholder="Last name" autocomplete="off">
+    <div class="form">
+      <label class="label1" for="lname" class="label1">Last Name:</label>
+      <input class="input1" type="text" name="lname" id="lname" placeholder="Last name" autocomplete="off">
     </div>
 
     <!-- id="password" to use for Javascript to access of HTML TAG and perform action -->
 
-    <div>
-      <label for="password">Password:</label>
-      <input type="password" name="password" id="password" placeholder="Password" autocomplete="off">
+    <div class="form">
+      <label class="label1" for="password">Password:</label>
+      <input class="input1" type="password" name="password" id="password" placeholder="Password" autocomplete="off"
+        required>
     </div>
 
-    <div>
-      <label for="email">Email:</label>
-      <input type="email" name="email" id="email" placeholder="Email" autocomplete="off">
+    <div class="form">
+      <label class="label1" for="email">Email:</label>
+      <input class="input1" type="email" name="email" id="email" placeholder="Email" autocomplete="off">
     </div>
 
-    <div>
-      <label for="html">HTML</label>
-      <input type="radio" name="fav_language" id="html" value="HTML">
+    <div class="form">
+      <label class="label1" for="html">HTML</label>
+      <input class="input1" type="radio" name="fav_language" id="html" value="HTML">
 
       <br>
-      <label for="css">CSS</label>
-      <input type="radio" name="fav_language" id="html" value="CSS">
+      <label class="label1" for="css">CSS</label>
+      <input class="input1" type="radio" name="fav_language" id="html" value="CSS">
     </div>
+
+
 
 
     <button value="submit"> Submit</button>
 
   </form>
+
+
+  <!-- We add new form tags with out form div and style try to understand. -->
+
+  <div>
+    <label>-- Check Box --</label> <br>
+    <label for="vehicleBike">Bike</label>
+    <input type="checkbox" name="vehicleBike" id="vehicleBike" value="Bike">
+    <br>
+    <label for="vehicleBike">Car</label>
+    <input type="checkbox" name="vehicleCar" id="vehicleCar" value="Car">
+    <br>
+
+    <Label for="vehicleBoat">Boat</Label>
+    <input type="checkbox" name="vehicleBoat" id="vehicleBoat" value="Boat">
+    <br>
+
+    <Label for="vehicleCycle">Boat</Label>
+    <input type="checkbox" name="vehicleCycle" id="vehicleCycle" value="Cycle">
+  </div>
+  <br>
+
+  <label for="color">Color</label>
+  <input type="color" name="color" id="color" value="color">
+  <br>
+  <br>
+
+  <label for="date"> Date</label>
+  <input type="date" name="date" id="date" value="date">
+
+  <br>
+
+  <label for="time">Time</label>
+  <input type="time" name="time" id="time">
+  <br>
+
+  <label for="number">Number</label>
+  <input type="number" name="number" id="number">
+
+  <label for="textarea">Text Area</label>
+  <textarea name="textarea" id="textarea" rows="15" cols="53">Query:</textarea>
+  <br>
+  <br>
+  <br>
+
+  <input type="datetime-local" name="localDateTIme" id="localDateTIme">
+  <br>
+  <br>
+  <br>
+
+  <input type="file" name="file" id="file" value="File ">
+
+  <input type="range" name="range" id="range" value="range">
+
+  <input type="reset" value="Reset Button">
+  <br>
+  <br>
+  <br>
+  <br>
+  <input type="email" name="email" id="email" placeholder="abx@yahoo.com" autocomplete="off" required>
+  <br>
+  <br>
+  <br>
+
+  <a href="https://t3.ftcdn.net/jpg/03/79/17/00/360_F_379170051_7No0Yg8z2uxbyby4Y0WFDNCBZo18tNGr.jpg" target="_blank"
+    rel="">
+    <input type="image" src="https://t3.ftcdn.net/jpg/03/79/17/00/360_F_379170051_7No0Yg8z2uxbyby4Y0WFDNCBZo18tNGr.jpg"
+      alt="Online Image">
+  </a>
+  <br>
+  <br>
+  <br>
+  <select name="select" id="select">
+    <!-- <option>-- Select Group ---</option> -->
+    <option> Engineering </option>
+    <option> Medical </option>
+    <option> CS </option>
+    <option> Developer </option>
+  </select>
+  <br>
+  <br>
+  <br>
+  <br>
 
 </body>
 
