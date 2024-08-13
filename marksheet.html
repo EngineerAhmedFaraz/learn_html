@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MarkSheet &nbsp; Layout</title>
+  <link rel="stylesheet" href="marksheet.css">
+</head>
+
+<body>
+
+  <!-- We create marksheet through table with csss -->
+  <table class="main">
+    <tr id="tr">
+      <td colspan="6" class="superTd">Student Marksheet</td>
+    </tr>
+
+    <tr>
+      <th>Name</th>
+      <th>RollNo</th>
+      <th>Maths</th>
+      <th>English</th>
+      <th>Physics</th>
+      <th>General Knowledge</th>
+    </tr>
+
+    <tr>
+      <td>Alex</td>
+      <td>01</td>
+      <td>85</td>
+      <td>60</td>
+      <td>90</td>
+      <td>75</td>
+    </tr>
+
+    <tr>
+      <td>John</td>
+      <td>02</td>
+      <td rowspan="2" class="Some60">60</td>
+      <td>80</td>
+      <td id="t90">90</td>
+      <td>75</td>
+    </tr>
+
+    <tr>
+      <td>Ahmed</td>
+      <td>03</td>
+      <!-- <td>50</td> -->
+      <td id="column60">60</td>
+      <td>70</td>
+      <td>50</td>
+      <!-- <td>70</td> -->
+    </tr>
+
+    <tr class="lastRow">
+      <td>Bishwa</td>
+      <td>04</td>
+      <td>80</td>
+      <td>90</td>
+      <td>60</td>
+      <td>75</td>
+    </tr>
+
+  </table>
+</body>
+
+</html>
