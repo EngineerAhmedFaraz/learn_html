@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Learn&nbsp;CSS</title>
+  <style>
+    /* Selectors  */
+    /* We use Universal * for remove bydefault whitespace of margin and padding */
+    * {
+      margin: 0;
+      padding: 0;
+    }
+
+    /* CSS apply with three ways like (Inline, Internal, External) */
+    /* These are basic Selectors like ( Type, Class, Id) */
+    /* Class can use with multiple html tags with same name */
+    /* Id is always unique don't use multiple ids with same name */
+    /* RGB : RED, GREEN, BLUE */
+    h1 {
+      color: blue;
+      text-transform: uppercase;
+      font-weight: bolder;
+    }
+
+    .highlight {
+      background-color: yellow;
+    }
+
+    #main {
+      font-size: 50px;
+      color: rgb(7, 196, 26);
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+      text-align: center;
+      text-transform: uppercase;
+    }
+
+    /* Box Model */
+    /* Box model define into 4 things like  ( Margin, Border, Padding, Context) */
+    /* Margin : We create whitespace above the border  */
+    /* Padding : We create whitespace below the boder */
+    /* Border : We create a border between Margin and Padding */
+    /* Content  :  We create our context below the padding or inside of box*/
+
+    /* Margin and Padding :  Work on 4 properties / Positions like (Top, right, Bottom, Left) */
+    /* Margin apply all sides :  margin: 150px;   */
+    /* Margin apply two sides with same like (top and bottom , left and right)  :  margin: 150px 150px*/
+    /* Margin aplly with different value on 4 properties like ( top, right, bottom, left):  */
+
+    .boxModel {
+      border: 2px solid rgb(229, 75, 9);
+      border-radius: 5px;
+      width: 300px;
+      height: 300px;
+      /* margin: 150px; */
+      /* margin-left: 150px;
+      margin-top: 150px;
+      margin-right: 150px;
+      margin-bottom: 150px; */
+      /* margin: 150px 150px; */
+      margin: 50px 200px 50px 330px;
+      padding: 30px;
+    }
+
+    .boxModel h3 {
+      font-size: 30px;
+      border: 1px solid black;
+      width: 150px;
+      height: 50px;
+      padding: 15px;
+      background-color: greenyellow;
+      border-radius: 10px;
+      cursor: pointer;
+
+    }
+  </style>
+</head>
+
+<body>
+
+  <h1>Basic CSS</h1>
+  <p class="highlight">This is highlighted text.</p>
+  <p id="main">This is the main text.</p>
+  <h6 style="font-size: 30px; color: red; text-transform: uppercase;">This is inline CSS.</h6>
+  <br />
+  <br />
+
+  <!-- Box Model -->
+
+  <div class="boxModel">
+    <h3>
+      Box Model
+    </h3>
+  </div>
+
+  <h3>
+    Box Model 2
+  </h3>
+
+
+</body>
+
+</html>
